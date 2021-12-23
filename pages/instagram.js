@@ -1,7 +1,7 @@
 import Head from "next/head";
 import router, { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "../styles/Ins.module.css"
+import styles from "../styles/ins.module.css"
 import { API_URL } from "../utils/urls";
 
 const instagram = () => {
