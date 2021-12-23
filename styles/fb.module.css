@@ -1,0 +1,89 @@
+.container {
+    box-sizing: border-box;
+    background-color: #fafafa;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.container input {
+    padding: 9px 0px 7px 9px;
+    font-size: 12px;
+    width: 16rem;
+    outline: none;
+    background: #fafafa;
+    border-radius: 3px;
+    border: 1px solid #efefef;
+}
+
+.box {
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    flex-grow: 1;
+}
+
+.field {
+    margin: 10px 0;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+
+.loginBtn {
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    background-color: #1877F2;
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #999;
+    margin-top: 6px;
+}
+
+.separator .line {
+    height: 1px;
+    width: 40%;
+    background-color: #dbdbdb;
+}
+
+.container a {
+    color: #1877F2;
+    padding: 20px;
+}
+
+.btnNew {
+    background-color: #00a400;
+    height: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    border: none;
+    color: #fff;
+    box-shadow: none;
+}
